@@ -1,3 +1,72 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* //////////////////////////////////// */
+/* ////////////// font ///////////////// */
+
+/* latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v7/HmnHiRzvcnQr8CjBje6GQnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* //////// index.html ///////// */
+
+.wrapper {
+  background-color: #05B8CC;
+  color: #ffffff;
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 50px;
+  border-width: 10px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  position: relative;
+
+}
+
+button {
+   background-color: #05B8CC;
+   color: #ffffff;
+   display: inline-block;
+   padding: 10px 140px 15px 80px;
+   font-size: 16px;
+   border: 2px solid #ffffff;
+   transition-duration: 0.4s;
+}
+ button:hover {
+   background-color: #F5FAF9;
+   color: black;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////// game.html ///////// */
+.card {
+  width: 200px;
+  height: 200px;
+  background: steelblue;
+  display: block;
+  transition: background 1s, transform 1s;
+}
+
+input {
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+input:checked +.card {
+  background: lightcoral;
+  transform: rotateY(180deg);
+}
