@@ -14,34 +14,53 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* //////// index.html ///////// */
 
 .wrapper {
-  background-color: #05B8CC;
+  background-color: #348b9e;
   color: #ffffff;
   max-width: 1600px;
   margin: 0px auto;
+  height: 100vh;
   padding: 50px;
   border-width: 10px;
   text-align: center;
   -webkit-box-sizing: border-box;
   position: relative;
+  font-family: Helvetica, Arial, sans-serif;
 
 }
 
-button {
-   background-color: #05B8CC;
+a {
+   background-color: #348b9e;
    color: #ffffff;
    display: inline-block;
    padding: 10px 140px 15px 80px;
    font-size: 16px;
    border: 2px solid #ffffff;
    transition-duration: 0.4s;
+   transform: skewX(25deg);
+   text-decoration: none;
+   margin-top: 15px;
 }
- button:hover {
+ a:hover {
    background-color: #F5FAF9;
    color: black;
  }
 
+.header_home {
+  font-family: 'Orbitron';
+  font-size: 55px;
+  padding: 5px;
 
+}
 
+h2 {
+  font-size: 22px;
+  padding: 5px;
+}
+/*
+.fa {
+  display: inline-block;
+}*/
+}
 
 
 
