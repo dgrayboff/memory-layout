@@ -169,10 +169,6 @@ h2 {
   list-style: none;
 }
 
-/*.board {
-  display: inline-block;
-}*/
-
 #heart-time {
   display: block;
   width: 100%;
@@ -190,18 +186,24 @@ h2 {
   float: right;
 }
 
+.row-1 {
+  display: inline-flex;
+}
+
+.row-2 {
+  display: inline-flex;
+}
+
+.row-3 {
+  display: inline-flex;
+}
+
 .card {
   width: 200px;
   height: 200px;
   background: #7986CB;
   border-radius: .25em;
   transition: background 1s, transform 1s;
-}
-
-.row-1 {
-  display: inline-block;
-  width: 1000px;
-  position: relative;
 }
 
 input {
