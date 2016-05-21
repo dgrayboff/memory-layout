@@ -23,6 +23,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   }
 }
 
+@keyframes hideicon {
+  0, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* //////// index.html ///////// */
 
 .wrapper {
@@ -54,10 +63,10 @@ a {
    transition-duration: 0.4s;
    text-decoration: none;
    margin-top: 15px;
-   animation: colorchange;
+   /*animation: colorchange;
    animation-duration: 8s;
    animation-play-state: running;
-   animation-iteration-count: infinite;
+   animation-iteration-count: infinite;*/
 }
 
 .easy {
@@ -72,6 +81,7 @@ a {
  a:hover {
    background-color: #FFF;
    color: black;
+
  }
 
 .header_home {
@@ -159,19 +169,21 @@ h2 {
   list-style: none;
 }
 
+/*.board {
+  display: inline-block;
+}*/
+
 #heart-time {
   display: block;
   width: 100%;
   padding-bottom: 2em;
   text-align: justify;
-
 }
 
 .hearts {
   display: inline-block;
-  /*float: left;*/
-
 }
+
 .time {
   text-align: right;
   display: inline-block;
@@ -183,8 +195,13 @@ h2 {
   height: 200px;
   background: #7986CB;
   border-radius: .25em;
-  display: block;
   transition: background 1s, transform 1s;
+}
+
+.row-1 {
+  display: inline-block;
+  width: 1000px;
+  position: relative;
 }
 
 input {
@@ -198,7 +215,8 @@ input:checked +.card {
 }
 
 input:not(:checked) +.card .card-icon {
-  animation: hide .25s forwards;  -- UPDATE THIS
+  animation: hideicon forwards;
+  animation-iteration-count: initial;
 }
 
 .card-icon {
