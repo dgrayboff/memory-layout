@@ -37,7 +37,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .wrapper {
   background-color: #348b9e;
   color: #ffffff;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0px auto;
   height: 100vh;
   padding: 50px;
@@ -97,68 +97,31 @@ h2 {
 }
 
 
-/* //////// game.html ///////// */
-
-.wrapper_game {
-  background-color: #3F51B5;
-  color: #FFF;
-  max-width: 1600px;
-  margin: 0px auto;
-  height: 100vh;
-  /*padding: 50px;*/
-  border-width: 10px;
-  text-align: center;
-  /*-webkit-box-sizing: border-box;*/
-  position: relative;
-  font-family: Helvetica, Arial, sans-serif;
-  display: block;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-}
-
-.header_game {
-  padding-bottom: .4em;
-  font-family: 'Orbitron';
-  font-size: 55px;
-  padding-top: 1em;
-  list-style: none;
-}
-
-#heart-time {
-  display: block;
-  width: 100%;
-  padding-bottom: 2em;
-  text-align: justify;
-
-}
-
-.hearts {
-  display: inline-block;
-  /*float: left;*/
-
-}
-.time {
-  text-align: right;
-  display: inline-block;
-  float: right;
-}
 /* ////////////////// BOARD GAME ///////////////// */
 
-.wrapper_game {
+#wrapper_game {
   background-color: #3F51B5;
   color: #FFF;
-  max-width: 1600px;
-  margin: 0px auto;
-  height: 100vh;
-  /*padding: 50px;*/
+  max-width: 100%; /*  100% */
+  /*margin: 0px auto;*/
+  /*height: 100%; /* 100vh */
+  /*height: 100%;*/
+  /*min-height: 100%;*/
+  /* padding: 50px; */
   border-width: 10px;
   text-align: center;
   /*-webkit-box-sizing: border-box;*/
-  position: relative;
+  position: absolute;
   font-family: Helvetica, Arial, sans-serif;
-  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
   padding-left: 2.5em;
   padding-right: 2.5em;
+  padding-bottom: 2.5em;
+
 }
 
 .header_game {
@@ -174,16 +137,19 @@ h2 {
   width: 100%;
   padding-bottom: 2em;
   text-align: justify;
+  position: relative;
 }
 
 .hearts {
   display: inline-block;
+  position: relative;
 }
 
 .time {
   text-align: right;
   display: inline-block;
   float: right;
+  position: relative;
 }
 
 .row-1 {
@@ -202,8 +168,9 @@ h2 {
   width: 200px;
   height: 200px;
   background: #7986CB;
-  border-radius: .25em;
+  border-radius: .5em;
   transition: background 1s, transform 1s;
+  margin: 1px;
 }
 
 input {
