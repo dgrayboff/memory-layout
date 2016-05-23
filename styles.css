@@ -63,10 +63,10 @@ a {
    transition-duration: 0.4s;
    text-decoration: none;
    margin-top: 15px;
-   /*animation: colorchange;
+   animation: colorchange;
    animation-duration: 8s;
    animation-play-state: running;
-   animation-iteration-count: infinite;*/
+   animation-iteration-count: infinite;
 }
 
 .easy {
@@ -81,7 +81,7 @@ a {
  a:hover {
    background-color: #FFF;
    color: black;
-
+   animation: colorchange;
  }
 
 .header_home {
@@ -185,7 +185,7 @@ input:checked +.card {
 
 input:not(:checked) +.card .card-icon {
   animation: hideicon forwards;
-  animation-iteration-count: initial;
+  /*animation-iteration-count: initial;*/
 }
 
 .card-icon {
